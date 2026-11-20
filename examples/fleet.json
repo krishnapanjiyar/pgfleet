@@ -1,0 +1,11 @@
+{
+  "cluster": "demo",
+  "image": "postgres:16",
+  "backup_dir": "./backups",
+  "password_env": "PGFLEET_PASSWORD",
+  "nodes": [
+    {"name": "pg-primary",   "role": "primary", "port": 5432},
+    {"name": "pg-replica-1", "role": "replica", "port": 5433},
+    {"name": "pg-replica-2", "role": "replica", "port": 5434}
+  ]
+}
